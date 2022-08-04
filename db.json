@@ -16,56 +16,56 @@
     {
     "id": 1,
     "name": "MSI NOTEBOOK",
-    "brand": "MSI",
-    "imageUrl": "../../assets/images/bilgisayar.jpg",
+     "imageUrl": "bilgisayar.jpg",
     "price": 2000,
     "isPopular": true
   },
   {
     "id": 2,
     "name": "Samsung S10",
-    "brand": "Samsung",
-    "imageUrl": "../../assets/images/samsung10.jpg",
+    "imageUrl": "samsung10.jpg",
     "price": 2000,
     "isPopular": true
   },
   {
     "id": 3,
-    "name": "Samsung S10",
-    "brand": "Samsung",
-    "imageUrl": "../../assets/images/samsung10.jpg",
+    "name": "Bose Speaker",
+    "imageUrl": "bosespeaker.jpg",
     "price": 2000,
     "isPopular": false
   },
   {
     "id": 4,
-    "name": "Samsung S10",
-    "brand": "Samsung",
-    "imageUrl": "../../assets/images/samsung10.jpg",
+    "name": "Macbook-air",
+    "imageUrl": "macbook-air.jpg",
     "price": 2000,
     "isPopular": false
   },
   {
     "id":5,
-    "name": "Samsung S10",
-    "brand": "Samsung",
-    "imageUrl": "../../assets/images/samsung10.jpg",
+    "name": "macbookpro",
+    "imageUrl": "macbookpro.jpg",
     "price": 2000,
     "isPopular": false
   },
   {
     "id": 6,
-    "name": "Samsung S10",
-    "brand": "Samsung",
-    "imageUrl": "../../assets/images/samsung10.jpg",
+    "name": "nikon",
+    "imageUrl": "nikon.jpg",
     "price": 2000,
     "isPopular": false
   },
   {
     "id": 7,
-    "name": "Samsung S10",
-    "brand": "Samsung",
-    "imageUrl": "../../assets/images/samsung10.jpg",
+    "name": "Sony headphone",
+    "imageUrl": "Sony-headphone.jpg",
+    "price": 2000,
+    "isPopular": false
+  },
+  {
+    "id": 8,
+    "name": "Sony Playstation 5",
+    "imageUrl": "sonyps5.jpg",
     "price": 2000,
     "isPopular": false
   }
