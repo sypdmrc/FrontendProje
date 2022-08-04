@@ -1,0 +1,73 @@
+{
+  "categories": [{
+      "id": 1,
+      "name": "bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "telefon"
+    },
+    {
+      "id": 3,
+      "name": "tablet"
+    }
+  ],
+  "products": [
+    {
+    "id": 1,
+    "name": "MSI NOTEBOOK",
+    "brand": "MSI",
+    "imageUrl": "../../assets/images/bilgisayar.jpg",
+    "price": 2000,
+    "isPopular": true
+  },
+  {
+    "id": 2,
+    "name": "Samsung S10",
+    "brand": "Samsung",
+    "imageUrl": "../../assets/images/samsung10.jpg",
+    "price": 2000,
+    "isPopular": true
+  },
+  {
+    "id": 3,
+    "name": "Samsung S10",
+    "brand": "Samsung",
+    "imageUrl": "../../assets/images/samsung10.jpg",
+    "price": 2000,
+    "isPopular": false
+  },
+  {
+    "id": 4,
+    "name": "Samsung S10",
+    "brand": "Samsung",
+    "imageUrl": "../../assets/images/samsung10.jpg",
+    "price": 2000,
+    "isPopular": false
+  },
+  {
+    "id":5,
+    "name": "Samsung S10",
+    "brand": "Samsung",
+    "imageUrl": "../../assets/images/samsung10.jpg",
+    "price": 2000,
+    "isPopular": false
+  },
+  {
+    "id": 6,
+    "name": "Samsung S10",
+    "brand": "Samsung",
+    "imageUrl": "../../assets/images/samsung10.jpg",
+    "price": 2000,
+    "isPopular": false
+  },
+  {
+    "id": 7,
+    "name": "Samsung S10",
+    "brand": "Samsung",
+    "imageUrl": "../../assets/images/samsung10.jpg",
+    "price": 2000,
+    "isPopular": false
+  }
+]
+}

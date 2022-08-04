@@ -1,0 +1,31 @@
+<div id="categories" class="card mt-3">
+  <div class="allCategories">
+    <div class="card-header text-center">
+      <h5>Kategoriler</h5>
+    </div>
+
+    <div class="card-body">
+
+
+      <a id="allCategories" (click)="selectCategory()" [class.active]="displayAll"
+        class="list-group-item list-group-item-action">
+        <i class="fa fa-list-ul" aria-hidden="true"></i>
+        Tüm Kategoriler
+      </a>
+
+
+
+
+      <a id="categories" *ngFor="let item of categories"
+        [class.active]="!displayAll && selectedCategory.id==item.id" (click)="selectCategory(item)"
+        class="list-group-item list-group-item-action mt-3">
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+        {{item.name | uppercase}}
+
+      </a>
+
+
+    </div>
+
+  </div>
+</div>

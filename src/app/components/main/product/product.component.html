@@ -1,0 +1,39 @@
+<div class="alert alert-danger mt-3" *ngIf="error">
+  {{error}}
+
+</div>
+
+<div *ngIf="products.length>0; else no_products">
+
+  <h4 id="title" class="text-center mt-3 p-2" style="border:1px solid rgb(2, 1, 2)">{{title | titlecase}}</h4>
+
+  <div id="search" class="my-2 my-lg-0">
+    <input
+    [(ngModel)]="filterProducts"
+    (ngModelChange)="onInputChange()"
+    id="searchInput"
+    class="form-control me-sm-2"
+    type="text" placeholder="Arama...">
+
+ </div>
+
+  <div class="alert alert-primary mt-3">{{filterProducts.length}} adet ürün bulundu</div>
+
+  <ng-template [ngTemplateOutlet]="productList"></ng-template>
+
+
+</div>
+
+
+
+<ng-template #productList>
+
+
+</ng-template>
+
+<ng-template #no_products>
+
+  <div class="alert alert-primary mt-3">Herhangi Bir Ürün Bulunamadı</div>
+
+</ng-template>
+

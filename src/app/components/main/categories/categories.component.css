@@ -1,0 +1,22 @@
+#allCategories {
+  border: 1px solid black;
+  color: black;
+
+}
+
+#allCategories a{
+  cursor: pointer;
+  padding: 40px!important;
+}
+
+#categories {
+  border: 1px solid black;
+  display: block;
+  color: black;
+
+}
+
+#categories a{
+  cursor: pointer;
+}
+
