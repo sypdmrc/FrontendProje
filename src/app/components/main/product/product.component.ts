@@ -23,6 +23,8 @@ export class ProductComponent implements OnInit {
 
   filterProducts:string="";
 
+  searchKey:string="";
+
   error:any;
 
   constructor(private productService: ProductService,private activatedRoute: ActivatedRoute,private alertifyService: AlertifyService) { }
