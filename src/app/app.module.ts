@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/main/product/product.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductsComponent } from './components/products/products.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AppRoutingModule } from './app-routing.module';
     ProductFilterPipe,
     CategoriesComponent,
     ProductComponent,
+    ProductsComponent,
 
   ],
   imports: [
