@@ -69,5 +69,14 @@
     "price": 2000,
     "isPopular": false
   }
+],
+"user": [{
+  "email": "ali@gmail.com",
+  "password": "123"
+},
+{
+  "email": "veli@gmail.com",
+  "password": "456"
+}
 ]
 }
