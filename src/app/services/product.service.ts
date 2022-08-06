@@ -17,6 +17,7 @@ export class ProductService {
     }
     return this.http.get<Product[]>(newUrl)
   }
+
   getProductById(productId:number):Observable<Product>{
     return this.http.get<Product>(this.url+"/"+productId)
   }

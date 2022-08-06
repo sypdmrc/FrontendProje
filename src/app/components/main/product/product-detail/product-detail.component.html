@@ -1,30 +1,32 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <img class="card-img-top" src="https://picsum.photos/seed/picsum/200/300" alt="image">
+      <img class="card-img-top h-100" src="../../../../../assets/images/{{product.imageUrl}}" alt="image">
     </div>
     <div class="col detailProduct">
-      <h5 class="card-title productName">Product Name</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at aperiam exercitationem magnam voluptatem debitis dolores quia repudiandae nemo! Vel? Some quick example text to build on the card title and make up the bulk of the card's content.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi vel quo numquam ea similique.</p>
-    <div class="container">
-      <div class="row productIcons">
-        <div class="col-2"><i class="fa fa-heart-o" aria-hidden="true" style="font-size: 25px;"></i></div>
-        
-        <div class="col-4">Product Price
-    </div>
-    <div class="col-6">
-      <button class="sepeteEkle store-item-icon  text-capitalize btn btn-success">
-      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-      add to cart
-    </button></div>
+      <h5 class="card-title productName">{{product.name}}</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at aperiam exercitationem
+        magnam voluptatem debitis dolores quia repudiandae nemo! Vel? Some quick example text to build on the card title
+        and make up the bulk of the card's content.
+      </p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi vel quo numquam ea similique.
+      </p>
+      <div class="container">
+        <div class="row productIcons">
+          <div class="col-4">
+            Fiyat: ${{product.price}}
+          </div>
+          <div class="col-8">
+            <button class="sepeteEkle store-item-icon  text-capitalize btn btn-success">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              add to cart
+            </button></div>
+        </div>
       </div>
-    </div>
 
 
-    
-    <!-- <span class="card-title">{{filteredProduct.name}}NAME</span>
+
+      <!-- <span class="card-title">{{filteredProduct.name}}NAME</span>
     <span class="cart-price">{{filteredProduct.price}}PRİCE</span> -->
     </div>
   </div>

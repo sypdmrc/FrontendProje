@@ -27,20 +27,20 @@
       <img class="card-img-top h-100" src="../../../../assets/images/{{item.imageUrl}}" alt="image">
 
       <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 25px;"></i>
- 
+
 
       <button class="sepeteEkle store-item-icon  text-capitalize">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         add to cart
       </button>
-      <button class="detayaGit store-item-icon text-capitalize" routerLink="/product/details">
+      <a routerLink="/product/detail/{{item.id}}" class="detayaGit store-item-icon text-capitalize" >
         <i class="fa fa-search" aria-hidden="true"></i>
         see details
-      </button>
+      </a>
 
       <div class="card-body">
-        <span class="card-title">{{item.name}}</span>
-        <span class="cart-price">{{item.price}}$</span>
+        <span class="card-title">{{item.name | titlecase}}</span>
+        <span class="cart-price">${{item.price}}</span>
       </div>
     </div>
   </div>
