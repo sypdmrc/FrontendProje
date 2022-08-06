@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProductsComponent } from './components/products/products.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-
+import { ProductDetailComponent } from './components/main/product/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { RegisterComponent } from './components/register/register.component';
     ProductsComponent,
     LoginComponent,
     RegisterComponent,
+    ProductDetailComponent,
 
   ],
   imports: [

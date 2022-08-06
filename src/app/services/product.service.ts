@@ -15,13 +15,9 @@ export class ProductService {
     if(category){
       newUrl+="?category="+category;
     }
-
     return this.http.get<Product[]>(newUrl)
-
   }
-
   getProductById(productId:number):Observable<Product>{
     return this.http.get<Product>(this.url+"/"+productId)
   }
-
 }

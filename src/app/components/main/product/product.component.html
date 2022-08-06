@@ -5,10 +5,10 @@
 
 <div *ngIf="products.length>0; else no_products">
 
-  <h4 id="title" class="text-center mt-3 p-2" style="border:1px solid rgb(2, 1, 2)">{{title | titlecase}}</h4>
+  <h4 id="title" class="text-center mt-3 p-2" style="border:1px solid rgb(2, 1, 2)">{{title}}</h4>
 
   <div id="search" class="my-2 my-lg-0">
-    <input [(ngModel)]="filterProducts" (ngModelChange)="onInputChange()" id="searchInput" class="form-control me-sm-2"
+    <input (ngModelChange)="onInputChange()" id="searchInput" class="form-control me-sm-2"
       type="text" placeholder="Arama...">
 
   </div>
@@ -20,25 +20,27 @@
 
 </div>
 
-
-
 <ng-template #productList>
 
-  
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-lg-3 g-3 ">
+    <div class="col card productCard" *ngFor="let item of filteredProducts | productFilter:filterProducts">
+      <img class="card-img-top h-100" src="../../../../assets/images/{{item.imageUrl}}" alt="image">
 
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-lg-3 g-3 " >
-    <div class="col card" *ngFor="let item of filteredProducts | productFilter:filterProducts" >
-      <img class="card-img-top h-100" src="../../../../assets/images/{{item.imageUrl}}"
-        alt="image">
+      <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 25px;"></i>
+ 
 
-      <i class="fa fa-heart-o" aria-hidden="true"></i>
-      <button class="store-item-icon text-capitalize">
+      <button class="sepeteEkle store-item-icon  text-capitalize">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         add to cart
       </button>
+      <button class="detayaGit store-item-icon text-capitalize" routerLink="/product/details">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        see details
+      </button>
+
       <div class="card-body">
         <span class="card-title">{{item.name}}</span>
-        <span class="cart-price">{{item.price}}</span>
+        <span class="cart-price">{{item.price}}$</span>
       </div>
     </div>
   </div>
