@@ -114,3 +114,7 @@
   border-radius: 5px;
   border: 1px solid rgb(206, 206, 206);
 }
+
+.container{
+  margin-top: 80px;
+}

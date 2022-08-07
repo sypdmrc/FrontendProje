@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MainComponent } from './components/main/main.component';
 import { ProductFilterPipe } from './pipes/product-filter.pipe';
 import { CategoriesComponent } from './components/main/categories/categories.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,7 +21,6 @@ import { ProductDetailComponent } from './components/main/product/product-detail
     NavbarComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
     ProductFilterPipe,
     CategoriesComponent,
     ProductComponent,
