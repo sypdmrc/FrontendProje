@@ -19,6 +19,7 @@
       "name": "MSI NOTEBOOK",
       "imageUrl": "bilgisayar.jpg",
       "price": 1000,
+      "categoryId":1,
       "isPopular": true
     },
     {
@@ -26,6 +27,7 @@
       "name": "Samsung S10",
       "imageUrl": "samsung10.jpg",
       "price": 2200,
+      "categoryId":1,
       "isPopular": true
     },
     {
@@ -33,6 +35,7 @@
       "name": "Bose Speaker",
       "imageUrl": "bosespeaker.jpg",
       "price": 3000,
+      "categoryId":3,
       "isPopular": false
     },
     {
@@ -40,6 +43,7 @@
       "name": "Macbook-air",
       "imageUrl": "macbook-air.jpg",
       "price": 3500,
+      "categoryId":2,
       "isPopular": false
     },
     {
@@ -47,6 +51,7 @@
       "name": "macbookpro",
       "imageUrl": "macbookpro.jpg",
       "price": 5000,
+      "categoryId":1,
       "isPopular": false
     },
     {
@@ -54,6 +59,7 @@
       "name": "nikon",
       "imageUrl": "nikon.jpg",
       "price": 1700,
+      "categoryId":3,
       "isPopular": false
     },
     {
@@ -61,6 +67,7 @@
       "name": "Sony headphone",
       "imageUrl": "Sony-headphone.jpg",
       "price": 500,
+      "categoryId":1,
       "isPopular": false
     },
     {
@@ -68,6 +75,7 @@
       "name": "Sony Playstation 5",
       "imageUrl": "sonyps5.jpg",
       "price": 9000,
+      "categoryId":2,
       "isPopular": false
     }
   ],

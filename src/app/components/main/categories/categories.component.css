@@ -1,30 +1,10 @@
-#allCategories {
-  border: 1px solid black;
-  color: black;
-
+.categoriesBody{
+  padding: 10px;
 }
 
-#allCategories a{
+.categoriesBody a{
   cursor: pointer;
-}
-
-#categories {
   border: 1px solid black;
-  display: block;
-  color: black;
-
+  padding: 10px;
 }
 
-#categories a{
-  cursor: pointer;
-}
-
-
-
-#categories .card-body{
-  background-color:#e1f0ff;
-}
-
-#categories .card-header{
-  background-color:#e1f0ff;
-}

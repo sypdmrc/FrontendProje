@@ -28,19 +28,20 @@ export class ProductComponent implements OnInit {
   constructor(private productService: ProductService,private activatedRoute: ActivatedRoute,private alertifyService: AlertifyService) { }
 
   ngOnInit(): void {
+
     this.activatedRoute.params.subscribe(params => {
-      this.productService.getProducts(params["category"]).subscribe(data=>{
+      this.productService.getProducts(params["categoryId"]).subscribe(data=>{
         this.products=data;
         this.filteredProducts=this.products;
       },error=>{
         this.error=error;
       })
     })
+
   }
 
   onInputChange() {
-    this.filteredProducts = this.filterProducts ?
-      this.products.filter(c => c.category.toLowerCase().startsWith(this.filterProducts)) : this.products;
+
   }
 
   addToList($event: any, product: Product) {
@@ -50,7 +51,7 @@ export class ProductComponent implements OnInit {
       $event.target.innerText = "Favorilerden Çıkar"
 
 
-      this.alertifyService.success(product.category.toUpperCase() + " favorilere eklendi")
+      this.alertifyService.success(product.categoryId + " favorilere eklendi")
     }
     else {
       $event.target.classList.remove("btn-danger");
@@ -58,9 +59,11 @@ export class ProductComponent implements OnInit {
       $event.target.innerText = "Favorilere Ekle"
 
 
-      this.alertifyService.error(product.category.toUpperCase() + " favorilerden çıkarıldı")
+      this.alertifyService.error(product.categoryId + " favorilerden çıkarıldı")
     }
   }
+
+
 
 
 }

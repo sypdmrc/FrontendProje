@@ -1,24 +1,47 @@
-<div class="alert alert-danger mt-3" *ngIf="error">
-  {{error}}
-
-</div>
-
-<div *ngIf="products.length>0; else no_products">
-
-  <h4 id="title" class="text-center mt-3 p-2" style="border:1px solid rgb(2, 1, 2)">{{title}}</h4>
-
-  <div id="search" class="my-2 my-lg-0">
-    <input (ngModelChange)="onInputChange()" id="searchInput" class="form-control me-sm-2"
-      type="text" placeholder="Arama...">
+<div class="container">
+  <div class="alert alert-danger mt-3" *ngIf="error">
+    {{error}}
 
   </div>
+</div>
 
-  <div class="alert alert-primary mt-3">{{filteredProducts.length}} adet ürün bulundu</div>
 
-  <ng-template [ngTemplateOutlet]="productList"></ng-template>
+<ng-template #no_products>
+  <div class="container">
+    <div class="alert alert-primary mt-3">Herhangi Bir Ürün Bulunamadı</div>
+  </div>
+</ng-template>
 
+
+
+<div class="container" *ngIf="products.length>0; else no_products">
+  <div class="row">
+    <div class="col-lg-3">
+      <app-categories></app-categories>
+    </div>
+
+
+
+    <div class="col-lg-9">
+
+      <h4 id="title" class="text-center mt-3 p-2">{{title | titlecase}}</h4>
+
+      <div id="search" class="my-2 my-lg-0">
+        <input [(ngModel)]="filterProducts" (ngModelChange)="onInputChange()" id="searchInput"
+          class="form-control me-sm-2" type="text" placeholder="Arama...">
+
+      </div>
+
+      <div class="alert alert-primary mt-3">{{filteredProducts.length}} adet ürün bulundu</div>
+
+      <ng-template [ngTemplateOutlet]="productList"></ng-template>
+
+
+    </div>
+  </div>
 
 </div>
+
 
 <ng-template #productList>
 
@@ -33,7 +56,7 @@
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         add to cart
       </button>
-      <a routerLink="/product/detail/{{item.id}}" class="detayaGit store-item-icon text-capitalize" >
+      <a routerLink="/product/detail/{{item.id}}" class="detayaGit store-item-icon text-capitalize">
         <i class="fa fa-search" aria-hidden="true"></i>
         see details
       </a>
@@ -45,11 +68,5 @@
     </div>
   </div>
 
-
-</ng-template>
-
-<ng-template #no_products>
-
-  <div class="alert alert-primary mt-3">Herhangi Bir Ürün Bulunamadı</div>
 
 </ng-template>

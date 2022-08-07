@@ -14,10 +14,9 @@ import { Login } from 'src/app/models/login';
 })
 export class LoginComponent implements OnInit {
 
-  loading: boolean = false;
+ loginTitle:string = 'Login'
 
   error: string;
-  isLoginMode: boolean = true;
 
   constructor(private loginService:LoginService,private router: Router) { }
 
@@ -31,19 +30,19 @@ export class LoginComponent implements OnInit {
     //   const password = form.value.password;
     //   console.log("form invalid");
     //   console.log(email,password)
-      
+
     //   return;
     // }
-      
+
     const email = form.value.email;
     const password = form.value.password;
-    
-    
-    
+
+
+
     let loginResponse: Observable<Login>
     loginResponse=this.loginService.login(email, password)
-    
-    
+
+
     loginResponse.subscribe(response => {
 
       if(response){
@@ -53,10 +52,10 @@ export class LoginComponent implements OnInit {
     }, err => {
 
       this.error =err;
-      
+
     })
 
     form.reset();
   }
-  
+
 }

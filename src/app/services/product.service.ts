@@ -9,16 +9,22 @@ export class ProductService {
 
   constructor(private http: HttpClient) {}
 
-  getProducts(category: string): Observable<Product[]> {
+  getProducts(categoryId: number): Observable<Product[]> {
+
     let newUrl=this.url;
 
-    if(category){
-      newUrl+="?category="+category;
+    if(categoryId){
+      newUrl+='?categoryId='+categoryId;
     }
     return this.http.get<Product[]>(newUrl)
+
   }
+
+
 
   getProductById(productId:number):Observable<Product>{
     return this.http.get<Product>(this.url+"/"+productId)
   }
+
+
 }

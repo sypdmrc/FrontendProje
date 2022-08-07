@@ -1,1 +1,24 @@
-<p>register works!</p>
+<div class="row">
+
+  <div class="col-md-5 mx-auto">
+    <h2 class="text-center mt-5 ">{{registerTitle}}</h2>
+
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" class="mt-5">
+      <div class="mb-3">
+        <label for="" class="form-label">Fullname</label>
+        <input type="text" required ngModel name="fullname" id="fullname" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="text" email required ngModel name="email" id="email" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Password</label>
+        <input type="password" minlength="8" required ngModel name="password" id="password" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+  </div>
+</div>
