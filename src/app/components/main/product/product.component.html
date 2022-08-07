@@ -8,7 +8,7 @@
 
 <ng-template #no_products>
   <div class="container">
-    <div class="alert alert-primary mt-3">Herhangi Bir Ürün Bulunamadı</div>
+    <div class="alert alert-primary mt-3">No Products Found</div>
   </div>
 </ng-template>
 
@@ -28,11 +28,11 @@
 
       <div id="search" class="my-2 my-lg-0">
         <input [(ngModel)]="filterProducts" (ngModelChange)="onInputChange()" id="searchInput"
-          class="form-control me-sm-2" type="text" placeholder="Arama...">
+          class="form-control me-sm-2" type="text" placeholder="Search">
 
       </div>
 
-      <div class="alert alert-dark mt-3">{{filteredProducts.length}} adet ürün bulundu</div>
+      <div class="alert alert-dark mt-3">{{filteredProducts.length}} Products Found</div>
 
       <ng-template [ngTemplateOutlet]="productList"></ng-template>
 

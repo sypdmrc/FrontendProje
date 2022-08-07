@@ -2,11 +2,11 @@
   "categories": [
     {
       "id": 1,
-      "name": "bilgisayar"
+      "name": "computer"
     },
     {
       "id": 2,
-      "name": "telefon"
+      "name": "phone"
     },
     {
       "id": 3,
