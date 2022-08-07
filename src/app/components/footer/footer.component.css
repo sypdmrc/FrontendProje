@@ -1,20 +1,31 @@
 #footerDiv {
-
-	background-color: rgb(229 225 225) !important;
-	line-height: 2rem;
-	margin-top: 10rem;
+  color: #fff;
+  background-color: rgb(2 125 243) !important;
+  line-height: 2rem;
+  margin-top: 10rem;
 
 }
 
 #footerDiv .col-lg-2 a {
-	color: black;
+  color: #fff;
 }
 
 
 
 #textBottom {
-	background-color: rgb(194, 194, 194);
-	color: rgb(55, 54, 54);
-	padding: 1rem;
+  background-color: rgb(194, 194, 194);
+  color: rgb(55, 54, 54);
+  padding: 1rem;
 }
 
+.col-md-5 i{
+  margin-right: 25px;
+  border: 1px solid #fff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.col-md-5 i:hover{
+  background-color:white;
+  color:rgb(2 125 243);
+}
