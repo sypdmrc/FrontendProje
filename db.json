@@ -19,64 +19,95 @@
       "name": "MSI NOTEBOOK",
       "imageUrl": "bilgisayar.jpg",
       "price": 1000,
-      "categoryId":1,
-      "isPopular": true
+      "categoryId":1
+
     },
     {
       "id": 2,
       "name": "Samsung S10",
       "imageUrl": "samsung10.jpg",
       "price": 2200,
-      "categoryId":1,
-      "isPopular": true
+      "categoryId":2
+
     },
     {
       "id": 3,
-      "name": "Bose Speaker",
-      "imageUrl": "bosespeaker.jpg",
+      "name": "Dell notebook",
+      "imageUrl": "dell.jpg",
       "price": 3000,
-      "categoryId":3,
-      "isPopular": false
+      "categoryId":1
+
     },
     {
       "id": 4,
-      "name": "Macbook-air",
-      "imageUrl": "macbook-air.jpg",
+      "name": "Macbook air",
+      "imageUrl": "macbook.jpg",
       "price": 3500,
-      "categoryId":2,
-      "isPopular": false
+      "categoryId":1
+
     },
     {
       "id": 5,
-      "name": "macbookpro",
+      "name": "macbook pro",
       "imageUrl": "macbookpro.jpg",
       "price": 5000,
-      "categoryId":1,
-      "isPopular": false
+      "categoryId":1
+
     },
     {
       "id": 6,
-      "name": "nikon",
-      "imageUrl": "nikon.jpg",
+      "name": "hp laptop",
+      "imageUrl": "hp.jpg",
       "price": 1700,
-      "categoryId":3,
-      "isPopular": false
+      "categoryId":1
+
     },
     {
       "id": 7,
-      "name": "Sony headphone",
-      "imageUrl": "Sony-headphone.jpg",
+      "name": "huawei metpad",
+      "imageUrl": "huawei.jpg",
       "price": 500,
-      "categoryId":1,
-      "isPopular": false
+      "categoryId":3
+
     },
     {
       "id": 8,
-      "name": "Sony Playstation 5",
-      "imageUrl": "sonyps5.jpg",
+      "name": "lenovo laptop",
+      "imageUrl": "lenovo.jpg",
       "price": 9000,
-      "categoryId":2,
-      "isPopular": false
+      "categoryId":1
+
+    },
+    {
+      "id": 8,
+      "name": "monster laptop",
+      "imageUrl": "monster.jpg",
+      "price": 9000,
+      "categoryId":1
+
+    },
+    {
+      "id": 8,
+      "name": "oppo reno",
+      "imageUrl": "oppo.jpg",
+      "price": 9000,
+      "categoryId":2
+
+    }, {
+      "id": 8,
+      "name": "samsung galaxy s20",
+      "imageUrl": "s20.jpg",
+      "price": 9000,
+      "categoryId":2
+
+    },
+    {
+      "id": 8,
+      "name": "xiaomi red",
+      "imageUrl": "xiaomi.jpg",
+      "price": 9000,
+      "categoryId":2
+
     }
   ],
   "user": [

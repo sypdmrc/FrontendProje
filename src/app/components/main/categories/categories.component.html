@@ -7,9 +7,9 @@
     <div class="categoriesBody">
 
 
-      <a routerLink="/"
-      (click)="selectCategory()"
-      [class.active]="displayAll" class="list-group-item list-group-item-action">
+      <a class="list-group-item list-group-item-action"  id="allCategories" routerLink="/home" (click)="selectCategory()"
+        [class.active]="displayAll">
+
         <i class="fa fa-list-ul" aria-hidden="true"></i>
         Tüm Kategoriler
       </a>
@@ -17,13 +17,11 @@
 
 
 
-      <a *ngFor="let item of categories"
-        routerLink="/product/category/{{item.id}}"
-        [class.active]="!displayAll && selectedCategory.id==item.id"
-        (click)="selectCategory(item)"
+      <a id="categories" *ngFor="let item of categories" routerLink="/home/category/{{item.id}}"
+        [class.active]="!displayAll && selectedCategory.id==item.id" (click)="selectCategory(item)"
         class="list-group-item list-group-item-action mt-3">
         <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-        {{item.name | uppercase}}
+        {{item.name | titlecase}}
 
       </a>
 
