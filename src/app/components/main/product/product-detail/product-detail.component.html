@@ -1,35 +1,60 @@
 <div class="container">
-  <div class="row">
 
-    <div class="col-lg-2">
-      <img class="card-img-top h-100" src="../../../../../assets/images/{{product.imageUrl}}"
-        style="width:300px!important" alt="image">
+  <!--left side start -->
+
+  <div class="leftSide">
+    <div class="card cardProductDetail" style="background-image: url(../../../../../assets/images/{{product.imageUrl}})">
+      <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 30px;"></i>
     </div>
-
-    <div class="col-lg-10 detailProduct">
-
-      <h5 class="card-title productName">{{product.name}}</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at aperiam exercitationem
-        magnam voluptatem debitis dolores quia repudiandae nemo! Vel? Some quick example text to build on the card title
-        and make up the bulk of the card's content.
-      </p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi vel quo numquam ea similique.
-      </p>
-
-      Fiyat: ${{product.price}}
-
-      <button class="sepeteEkle store-item-icon  text-capitalize btn btn-success">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        add to cart
-      </button>
-
-    </div>
-
   </div>
 
+  
+  <!--left side end -->
 
 
-  <!-- <span class="card-title">{{filteredProduct.name}}NAME</span>
-    <span class="cart-price">{{filteredProduct.price}}PRİCE</span> -->
+
+  <!--right side start -->
+  <div class="rightSide">
+    <div class="descriptionOfProduct">
+      <span>Product Details</span>
+      <h1>{{product.name}}</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quae rem repellat qui earum reprehenderit
+        cumque. Mollitia odit ut deserunt facilis repellendus, nisi eos voluptatibus? Eligendi minus nesciunt voluptas
+        totam.</p>
+    </div>
+
+    <div class="otherDetailsOfProduct">
+      <!--COLOR-->
+      <div class="colorOfProduct">
+        <span>Color</span>
+
+        <div class="selectColor">
+
+          <div class="btn-group-lg custom-radios">
+            <button type="button " class="btn button1 buttonGroup"></button>
+            <button type="button" class="btn button2 buttonGroup"></button>
+            <button type="button" class="btn button3 buttonGroup"></button>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!--OTHER DETAILS-->
+      <div class="plusDetails">
+        For more information click <a href="#">here</a>
+      </div>
+
+      <!--PRICE-->
+      <div class="productPrice">
+        <span>{{product.price}}$</span>
+        <a href="#" class="cart-btn">Add to cart</a>
+        <a href="#" class="cart-btn " id="keepShopping">Keep shopping</a>
+      </div>
+      
+    </div>
+  </div>
+  <!--right side end -->
+
+
 </div>
-
