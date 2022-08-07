@@ -19,6 +19,7 @@
       "name": "MSI NOTEBOOK",
       "imageUrl": "bilgisayar.jpg",
       "price": 1000,
+      "description": "msi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":1
 
     },
@@ -26,6 +27,7 @@
       "id": 2,
       "name": "Samsung S10",
       "imageUrl": "samsung10.jpg",
+      "description": "Samsung Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "price": 2200,
       "categoryId":2
 
@@ -34,6 +36,7 @@
       "id": 3,
       "name": "Dell notebook",
       "imageUrl": "dell.jpg",
+      "description": "Dell Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "price": 3000,
       "categoryId":1
 
@@ -42,6 +45,7 @@
       "id": 4,
       "name": "Macbook air",
       "imageUrl": "macbook.jpg",
+      "description": "Macbook Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "price": 3500,
       "categoryId":1
 
@@ -51,6 +55,7 @@
       "name": "macbook pro",
       "imageUrl": "macbookpro.jpg",
       "price": 5000,
+      "description": "macbook pro Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":1
 
     },
@@ -59,6 +64,7 @@
       "name": "hp laptop",
       "imageUrl": "hp.jpg",
       "price": 1700,
+      "description": "hp Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":1
 
     },
@@ -67,6 +73,7 @@
       "name": "huawei metpad",
       "imageUrl": "huawei.jpg",
       "price": 500,
+      "description": "huawei Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":3
 
     },
@@ -75,37 +82,42 @@
       "name": "lenovo laptop",
       "imageUrl": "lenovo.jpg",
       "price": 9000,
+      "description": "lenovo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":1
 
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "monster laptop",
       "imageUrl": "monster.jpg",
       "price": 9000,
+      "description": "monster Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":1
 
     },
     {
-      "id": 8,
+      "id": 10,
       "name": "oppo reno",
       "imageUrl": "oppo.jpg",
       "price": 9000,
+      "description": "oppo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":2
 
     }, {
-      "id": 8,
+      "id": 11,
       "name": "samsung galaxy s20",
       "imageUrl": "s20.jpg",
       "price": 9000,
+      "description": "samsung galaxy s20 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":2
 
     },
     {
-      "id": 8,
+      "id": 12,
       "name": "xiaomi red",
       "imageUrl": "xiaomi.jpg",
       "price": 9000,
+      "description": "xiaomi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex dolore fugiat placeat quam ullam a, blanditiis vitae accusantium hic minus soluta unde similique alias amet harum, velit molestiae ad.",
       "categoryId":2
 
     }

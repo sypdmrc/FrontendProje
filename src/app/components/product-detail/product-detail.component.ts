@@ -11,9 +11,7 @@ import { ProductService } from 'src/app/services/product.service'
   providers: [ProductService, AlertifyService],
 })
 export class ProductDetailComponent implements OnInit {
-
-  product:Product;
-
+  product: Product
 
   constructor(
     private productService: ProductService,
@@ -22,12 +20,12 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
-      this.productService.getProductById(params["productId"]).subscribe(
+      this.productService.getProductById(params['productId']).subscribe(
         (data) => {
           this.product = data
         },
         (error) => {
-
+          //
         },
       )
     })

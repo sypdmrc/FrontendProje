@@ -32,13 +32,15 @@
 }
 
 .sepeteEkle {
-	top: 40%;
+	top: 38%;
 	left: 50%;
+  width: 150px;
 }
 
 .detayaGit {
 	top: 55%;
 	left: 50%;
+  width: 150px;
 }
 
 .store-item-icon {
@@ -106,11 +108,11 @@
 
 .card-body {
 	padding: 5px;
-	background-color: rgb(85, 84, 84);
+	background-color: rgb(2 125 243);
 }
 
 #title{
-  background-color:#f5f5f5;
+  background-color:rgb(2 125 243);
   border-radius: 5px;
   border: 1px solid rgb(206, 206, 206);
 }

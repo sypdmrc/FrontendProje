@@ -24,7 +24,7 @@
 
     <div class="col-lg-9">
 
-      <h4 id="title" class="text-center mt-3 mb-3 p-2">{{title | titlecase}}</h4>
+      <h4 id="title" class="text-center mt-3 mb-3 p-2 text-white">{{title | titlecase}}</h4>
 
       <div id="search" class="my-2 my-lg-0">
         <input [(ngModel)]="filterProducts" (ngModelChange)="onInputChange()" id="searchInput"
@@ -32,7 +32,7 @@
 
       </div>
 
-      <div class="alert alert-dark mt-3">{{filteredProducts.length}} Products Found</div>
+      <div class="alert alert-primary mt-3">{{filteredProducts.length}} Products Found</div>
 
       <ng-template [ngTemplateOutlet]="productList"></ng-template>
 
@@ -52,7 +52,7 @@
       <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 25px;"></i>
 
 
-      <button class="sepeteEkle store-item-icon  text-capitalize">
+      <button class="sepeteEkle store-item-icon text-capitalize">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         add to cart
       </button>
@@ -63,7 +63,7 @@
 
       <div class="card-body">
         <span class="card-title">{{item.name | titlecase}}</span>
-        <span class="cart-price">${{item.price}}</span>
+        <span class="cart-price">{{item.price | currency}}</span>
       </div>
     </div>
   </div>

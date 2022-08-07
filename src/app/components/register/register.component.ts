@@ -11,7 +11,7 @@ import { RegisterService } from 'src/app/services/register.service';
 })
 export class RegisterComponent implements OnInit {
 
-  registerTitle: string="Kullanıcı Oluştur";
+  registerTitle: string="create user";
 
   constructor(private http: HttpClient,private registerService:RegisterService) {}
 

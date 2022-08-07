@@ -1,0 +1,61 @@
+<div class="container">
+
+  <!--left side start -->
+
+  <div class="leftSide">
+    <div class="card cardProductDetail" style="background-image: url(../../../assets/images/{{product.imageUrl}})">
+      <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 30px;"></i>
+    </div>
+  </div>
+
+
+  <!--left side end -->
+
+
+
+  <!--right side start -->
+  <div class="rightSide">
+    <div class="descriptionOfProduct">
+      <span style="font-size:16px">Product Details</span>
+      <h1>{{product.name | titlecase}}</h1>
+      <p>{{product.description | titlecase}}</p>
+    </div>
+
+    <div class="otherDetailsOfProduct">
+      <!--COLOR-->
+      <div class="colorOfProduct">
+        <span>Color</span>
+
+        <div class="selectColor">
+
+          <div class="btn-group-lg custom-radios">
+            <button type="button " class="btn button1 buttonGroup"></button>
+            <button type="button" class="btn button2 buttonGroup"></button>
+            <button type="button" class="btn button3 buttonGroup"></button>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!--OTHER DETAILS-->
+      <div class="plusDetails mb-3">
+        For more information click <a href="#">here</a>
+      </div>
+
+      <!--PRICE-->
+
+
+    </div>
+    <div class="productPrice mb-3">
+      <span>Price: {{product.price | currency}}</span>
+    </div>
+    <div class="detailButtons">
+      <a class="cart-btn">Add to cart</a>
+      <a href="/" class="cart-btn" id="keepShopping">Keep shopping</a>
+    </div>
+  </div>
+  <!--right side end -->
+
+
+</div>

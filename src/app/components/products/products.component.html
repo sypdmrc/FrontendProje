@@ -1,15 +1,15 @@
 <div class="container">
-<h2 class="text-center p-3 productsTitle" style="background-color:#f5f5f5;">{{productsTitle}}</h2>
+<h2 class="text-center p-3 productsTitle text-white" style="background-color:#487cff">{{productsTitle}}</h2>
   <div class="row">
     <div *ngFor="let item of products" class="col-lg-3">
       <div class="card mb-3">
         <img class="card-img-top" src="../../../assets/images/{{item.imageUrl}}" alt="Title">
         <div class="card-body">
           <h4 class="card-title">{{item.name | titlecase}}</h4>
-          <p class="card-price">Price:${{item.price}}</p>
+          <p class="card-price">Price:{{item.price | currency}}</p>
           <div class="d-grid gap-2">
-            <button class="btn btn-dark">Add To Cart</button>
-            <button class="btn btn-secondary">Add To Favourites</button>
+            <button class="btn btn-primary">Add To Cart</button>
+            <button class="btn btn-info text-white">Add To Favourites</button>
           </div>
         </div>
       </div>
