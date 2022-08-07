@@ -24,7 +24,7 @@
 
     <div class="col-lg-9">
 
-      <h4 id="title" class="text-center mt-3 p-2">{{title | titlecase}}</h4>
+      <h4 id="title" class="text-center mt-3 mb-3 p-2">{{title | titlecase}}</h4>
 
       <div id="search" class="my-2 my-lg-0">
         <input [(ngModel)]="filterProducts" (ngModelChange)="onInputChange()" id="searchInput"
@@ -32,7 +32,7 @@
 
       </div>
 
-      <div class="alert alert-primary mt-3">{{filteredProducts.length}} adet ürün bulundu</div>
+      <div class="alert alert-dark mt-3">{{filteredProducts.length}} adet ürün bulundu</div>
 
       <ng-template [ngTemplateOutlet]="productList"></ng-template>
 

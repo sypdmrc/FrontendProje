@@ -15,7 +15,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductComponent implements OnInit {
 
-  title:string="Ürün Listesi";
+  title:string="Product List";
 
   products:Product[]=[];
 

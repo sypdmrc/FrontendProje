@@ -10,7 +10,8 @@ import { ProductService } from 'src/app/services/product.service'
   providers: [ProductService],
 })
 export class ProductsComponent implements OnInit {
-  products: Product[] = []
+  productsTitle:string="Product List"
+  products: Product[] = [];
 
   constructor(
     private productService: ProductService,
