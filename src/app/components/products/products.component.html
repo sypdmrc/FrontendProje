@@ -5,7 +5,7 @@
       <div class="card mb-3">
         <img class="card-img-top" src="../../../assets/images/{{item.imageUrl}}" alt="Title">
         <div class="card-body">
-          <h4 class="card-title">{{item.name}}</h4>
+          <h4 class="card-title">{{item.name | titlecase}}</h4>
           <p class="card-price">Price:${{item.price}}</p>
           <div class="d-grid gap-2">
             <button class="btn btn-primary">Add To Cart</button>

@@ -8,3 +8,7 @@
   padding: 10px;
 }
 
+.list-group-item-action.active{
+  background-color:rgb(213 209 209)!important;
+}
+
