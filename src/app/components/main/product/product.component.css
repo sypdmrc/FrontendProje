@@ -9,10 +9,10 @@
 } */
 
 .card {
-	width: 50%;
+	width: 49%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	position: relative;
-
+	margin-left: auto;
 }
 
 
@@ -24,6 +24,11 @@
 	transition: .5s ease;
 	backface-visibility: hidden;
 	margin: auto;
+}
+
+.productCard {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .sepeteEkle {
