@@ -41,7 +41,8 @@ export class ProductComponent implements OnInit {
   }
 
   onInputChange() {
-
+    this.filteredProducts = this.filterProducts ?
+      this.products.filter(p => p.name.toLowerCase().startsWith(this.filterProducts)) : this.products;
   }
 
   addToList($event: any, product: Product) {
