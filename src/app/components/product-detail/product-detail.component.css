@@ -168,11 +168,11 @@
   display: inline-block;
 }
 
-.selectColor input[type=] {
+.selectColor input {
   display: none;
 }
 
-.selectColor input[type=]+label span {
+.selectColor input {
   display: inline-block;
   width: 40px;
   height: 40px;
